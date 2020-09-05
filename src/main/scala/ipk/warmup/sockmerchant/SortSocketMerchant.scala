@@ -4,7 +4,7 @@ import java.io.PrintWriter
 
 import scala.io.StdIn.readLine
 
-object Solution {
+object SortSocketMerchant {
   def sockMerchant(n: Int, ar: Array[Int]): Int =
     ar.take(n)
       .sortInPlace()

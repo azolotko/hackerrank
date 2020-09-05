@@ -2,7 +2,9 @@ name := "hackerrank"
 
 version := "0.1.0"
 
-scalaVersion := "0.27.0-RC1"
+scalaVersion := "2.13.3"
+
+enablePlugins(JmhPlugin)
 
 libraryDependencies ++= Seq(
   "org.scalameta" %% "munit" % "0.7.12" % Test
