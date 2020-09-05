@@ -1,9 +1,8 @@
-## sbt project compiled with Dotty
+## My solutions to HackerRank challenges
 
 ### Usage
 
 This is a normal sbt project, you can compile code with `sbt compile` and run it
-with `sbt run`, `sbt console` will start a Dotty REPL.
+with `sbt run`, `sbt console` will start a REPL.
 
-For more information on the sbt-dotty plugin, see the
-[dotty-example-project](https://github.com/lampepfl/dotty-example-project/blob/master/README.md).
+To run benchmarks use `sbt jmh:run -i 10 -wi 10 -f1 -t1`
