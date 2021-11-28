@@ -20,6 +20,10 @@ lazy val `hourglass-sum` =
   project
     .in(file("challenges/hourglass-sum"))
 
+lazy val `dynamic-array` =
+  project
+    .in(file("challenges/dynamic-array"))
+
 lazy val root =
   project
     .in(file("."))
@@ -31,5 +35,6 @@ lazy val root =
       `jumping-on-the-clouds`,
       `repeated-string`,
       `counting-valleys`,
-      `hourglass-sum`
+      `hourglass-sum`,
+      `dynamic-array`
     )
