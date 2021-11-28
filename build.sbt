@@ -24,6 +24,10 @@ lazy val `dynamic-array` =
   project
     .in(file("challenges/dynamic-array"))
 
+lazy val `flipping-bits` =
+  project
+    .in(file("challenges/flipping-bits"))
+
 lazy val root =
   project
     .in(file("."))
@@ -36,5 +40,6 @@ lazy val root =
       `repeated-string`,
       `counting-valleys`,
       `hourglass-sum`,
-      `dynamic-array`
+      `dynamic-array`,
+      `flipping-bits`
     )

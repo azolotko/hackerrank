@@ -30,7 +30,7 @@ object Result {
 
   def dynamicArray(n: Int, queries: Array[Array[Int]]): Array[Int] = {
     var lastAnswer = 0
-    var arr: Array[Array[Int]] = Array.fill(n)(Array.empty)
+    val arr: Array[Array[Int]] = Array.fill(n)(Array.empty)
 
     var answers: Array[Int] = Array.empty
 
@@ -50,7 +50,7 @@ object Result {
 }
 
 object Solution {
-  def main(args: Array[String]) {
+  def main(args: Array[String]): Unit = {
     val printWriter = new PrintWriter(sys.env("OUTPUT_PATH"))
 
     val firstMultipleInput = StdIn.readLine.replaceAll("\\s+$", "").split(" ")
