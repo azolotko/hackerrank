@@ -28,6 +28,10 @@ lazy val `flipping-bits` =
   project
     .in(file("challenges/flipping-bits"))
 
+lazy val `primality` =
+  project
+    .in(file("challenges/primality"))
+
 lazy val root =
   project
     .in(file("."))
@@ -41,5 +45,6 @@ lazy val root =
       `counting-valleys`,
       `hourglass-sum`,
       `dynamic-array`,
-      `flipping-bits`
+      `flipping-bits`,
+      `primality`
     )
