@@ -61,9 +61,8 @@ object Solution {
 
     val queries = Array.ofDim[Int](q, 3)
 
-    for (i <- 0 until q) {
+    for (i <- 0 until q)
       queries(i) = StdIn.readLine.replaceAll("\\s+$", "").split(" ").map(_.trim.toInt)
-    }
 
     val result = Result.dynamicArray(n, queries)
 

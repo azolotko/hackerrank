@@ -32,6 +32,10 @@ lazy val `primality` =
   project
     .in(file("challenges/primality"))
 
+lazy val `friend-circle-queries` =
+  project
+    .in(file("challenges/friend-circle-queries"))
+
 lazy val root =
   project
     .in(file("."))
@@ -46,5 +50,6 @@ lazy val root =
       `hourglass-sum`,
       `dynamic-array`,
       `flipping-bits`,
-      `primality`
+      `primality`,
+      `friend-circle-queries`
     )
