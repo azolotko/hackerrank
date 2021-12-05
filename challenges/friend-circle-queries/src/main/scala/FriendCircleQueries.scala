@@ -10,21 +10,26 @@ object Solution {
     var maxSize = 0
     val parents = mutable.Map.empty[Int, Int]
 
-    def find(v: Int): Int = {
-      var x = v
-      while (x != parents(x))
-        x = parents(parents(x)).tap(parents += x -> _)
-      x
-    }
+//    def find(v: Int): Int = {
+//      var x = v
+//      var p = parents(v)
+//
+//      while (x != p) {
+//        x = parents(p).tap(parents += x -> _)
+//        p = parents(x)
+//      }
+//
+//      x
+//    }
 
-//    def find(v: Int): Int =
-//      Iterator
-//        .iterate(v)(parents)
-//        .grouped(2)
-//        .takeWhile { case Seq(x, parent) => x != parent }
-//        .foldLeft(v) { case (_, Seq(x, parent)) =>
-//          parents(parent).tap(parents += x -> _)
-//        }
+    def find(v: Int): Int =
+      Iterator
+        .iterate(v)(parents)
+        .grouped(2)
+        .takeWhile { case Seq(x, p) => x != p }
+        .foldLeft(v) { case (_, Seq(x, p)) =>
+          parents(p).tap(parents += x -> _)
+        }
 
     queries.map { case Array(a, b) =>
       if (!parents.contains(a)) {
