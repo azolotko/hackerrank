@@ -1,4 +1,4 @@
-ThisBuild / scalaVersion := "2.13.7"
+ThisBuild / scalaVersion := "2.13.14"
 
 lazy val `sock-merchant` =
   project
@@ -36,6 +36,19 @@ lazy val `friend-circle-queries` =
   project
     .in(file("challenges/friend-circle-queries"))
 
+lazy val `ctci-ransom-note` =
+  project
+    .in(file("challenges/ctci-ransom-note"))
+
+ThisBuild / libraryDependencies ++=
+  Seq(
+    "weaver-cats",
+    "weaver-scalacheck"
+  ).map("com.disneystreaming" %% _ % "0.8.4" % Test)
+
+ThisBuild / testFrameworks +=
+  new TestFramework("weaver.framework.CatsEffect")
+
 lazy val root =
   project
     .in(file("."))
@@ -51,5 +64,6 @@ lazy val root =
       `dynamic-array`,
       `flipping-bits`,
       `primality`,
-      `friend-circle-queries`
+      `friend-circle-queries`,
+      `ctci-ransom-note`
     )
