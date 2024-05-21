@@ -1,7 +1,6 @@
-import weaver._
 import weaver.scalacheck._
 
-object SolutionTest extends weaver.FunSuite with Checkers {
+object CtciRansomNoteTest extends weaver.FunSuite with Checkers {
   import SolutionImpl._
 
   test("Empty input") {
