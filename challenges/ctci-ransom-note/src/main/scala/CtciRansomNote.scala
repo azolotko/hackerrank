@@ -1,7 +1,7 @@
 import scala.io._
 import scala.collection.mutable
 
-object SolutionImpl {
+object Solution {
   def checkMagazine(magazine: Array[String], note: Array[String]): Unit = {
     println(
       if (checkMagazine0(magazine, note))
@@ -24,9 +24,7 @@ object SolutionImpl {
         .exists(_ >= 0)
     )
   }
-}
 
-object Solution {
   def main(args: Array[String]): Unit = {
     val _ = StdIn.readLine
 
@@ -34,6 +32,6 @@ object Solution {
 
     val note = StdIn.readLine.replaceAll("\\s+$", "").split(" ")
 
-    SolutionImpl.checkMagazine(magazine, note)
+    checkMagazine(magazine, note)
   }
 }

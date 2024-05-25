@@ -1,7 +1,7 @@
 import weaver.scalacheck._
 
 object CtciRansomNoteTest extends weaver.FunSuite with Checkers {
-  import SolutionImpl._
+  import Solution._
 
   test("Empty input") {
     expect(checkMagazine0(magazine = Array.empty, note = Array.empty))

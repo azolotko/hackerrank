@@ -1,7 +1,7 @@
 import weaver.scalacheck._
 
 object TwoStringsTest extends weaver.FunSuite with Checkers {
-  import SolutionImpl._
+  import Solution._
 
   test("Empty input") {
     expect(twoStrings("", "") == "NO")
