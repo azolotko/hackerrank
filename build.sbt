@@ -36,6 +36,9 @@ lazy val `two-strings` =
 lazy val `maximum-xor` =
   project.in(file("challenges/maximum-xor"))
 
+lazy val `alternating-characters` =
+  project.in(file("challenges/alternating-characters"))
+
 ThisBuild / libraryDependencies ++=
   Seq(
     "weaver-cats",
@@ -63,5 +66,6 @@ lazy val root =
       `friend-circle-queries`,
       `ctci-ransom-note`,
       `two-strings`,
-      `maximum-xor`
+      `maximum-xor`,
+      `alternating-characters`
     )
