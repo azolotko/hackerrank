@@ -39,6 +39,9 @@ lazy val `maximum-xor` =
 lazy val `alternating-characters` =
   project.in(file("challenges/alternating-characters"))
 
+lazy val `sherlock-and-valid-string` =
+  project.in(file("challenges/sherlock-and-valid-string"))
+
 ThisBuild / libraryDependencies ++=
   Seq(
     "weaver-cats",
@@ -67,5 +70,6 @@ lazy val root =
       `ctci-ransom-note`,
       `two-strings`,
       `maximum-xor`,
-      `alternating-characters`
+      `alternating-characters`,
+      `sherlock-and-valid-string`
     )
