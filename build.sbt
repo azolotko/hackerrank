@@ -33,6 +33,9 @@ lazy val `ctci-ransom-note` =
 lazy val `two-strings` =
   project.in(file("challenges/two-strings"))
 
+lazy val `maximum-xor` =
+  project.in(file("challenges/maximum-xor"))
+
 ThisBuild / libraryDependencies ++=
   Seq(
     "weaver-cats",
@@ -59,5 +62,6 @@ lazy val root =
       `primality`,
       `friend-circle-queries`,
       `ctci-ransom-note`,
-      `two-strings`
+      `two-strings`,
+      `maximum-xor`
     )
