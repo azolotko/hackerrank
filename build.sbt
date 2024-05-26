@@ -45,6 +45,9 @@ lazy val `sherlock-and-valid-string` =
 lazy val `special-palindrome-again` =
   project.in(file("challenges/special-palindrome-again"))
 
+lazy val `one-week-preparation-kit-plus-minus` =
+  project.in(file("challenges/one-week-preparation-kit-plus-minus"))
+
 ThisBuild / libraryDependencies ++=
   Seq(
     "weaver-cats",
@@ -75,5 +78,6 @@ lazy val root =
       `maximum-xor`,
       `alternating-characters`,
       `sherlock-and-valid-string`,
-      `special-palindrome-again`
+      `special-palindrome-again`,
+      `one-week-preparation-kit-plus-minus`
     )
