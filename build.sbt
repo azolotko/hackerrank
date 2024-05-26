@@ -51,6 +51,9 @@ lazy val `one-week-preparation-kit-plus-minus` =
 lazy val `one-week-preparation-kit-mini-max-sum` =
   project.in(file("challenges/one-week-preparation-kit-mini-max-sum"))
 
+lazy val `one-week-preparation-kit-time-conversion` =
+  project.in(file("challenges/one-week-preparation-kit-time-conversion"))
+
 ThisBuild / libraryDependencies ++=
   Seq(
     "weaver-cats",
@@ -83,5 +86,6 @@ lazy val root =
       `sherlock-and-valid-string`,
       `special-palindrome-again`,
       `one-week-preparation-kit-plus-minus`,
-      `one-week-preparation-kit-mini-max-sum`
+      `one-week-preparation-kit-mini-max-sum`,
+      `one-week-preparation-kit-time-conversion`
     )

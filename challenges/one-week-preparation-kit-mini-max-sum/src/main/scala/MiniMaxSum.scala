@@ -7,7 +7,7 @@ object Solution {
   }
 
   def miniMaxSum0(arr: Array[Int]): (Long, Long) = {
-    val sorted: Array[Long] = arr.map(x => x: Long)
+    val sorted: Array[Long] = arr.map(x => x: Long).sorted
 
     (
       sorted.take(4).sum,

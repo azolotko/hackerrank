@@ -19,4 +19,7 @@ object MiniMaxSumTest extends weaver.FunSuite with Checkers {
     expect(miniMaxSum0(Array(256741038, 623958417, 467905213, 714532089, 938071625)) == (2063136757L, 2744467344L))
   }
 
+  test("Sample Test Case") {
+    expect(miniMaxSum0(Array(7, 69, 2, 221, 8974)) == (299L, 9271L))
+  }
 }
