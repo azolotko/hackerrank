@@ -57,6 +57,9 @@ lazy val `one-week-preparation-kit-time-conversion` =
 lazy val `largest-rectangle` =
   project.in(file("challenges/largest-rectangle"))
 
+lazy val `simple-text-editor` =
+  project.in(file("challenges/simple-text-editor"))
+
 ThisBuild / libraryDependencies ++=
   Seq(
     "weaver-cats",
@@ -91,5 +94,6 @@ lazy val root =
       `one-week-preparation-kit-plus-minus`,
       `one-week-preparation-kit-mini-max-sum`,
       `one-week-preparation-kit-time-conversion`,
-      `largest-rectangle`
+      `largest-rectangle`,
+      `simple-text-editor`
     )
